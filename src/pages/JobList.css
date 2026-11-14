@@ -1,0 +1,160 @@
+.job-list-page {
+  padding: 30px 40px;
+  background: #f1f5f9;
+  min-height: calc(100vh - 75px);
+}
+
+.job-list-page h1 {
+  color: #2563eb;
+  margin-bottom: 25px;
+}
+
+.jobs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.job-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.job-card h2 {
+  color: #2563eb;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  color: #64748b;
+  margin: 8px 0;
+}
+
+.job-list-page a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.job-list-page a:hover {
+  text-decoration: underline;
+}
+
+.edit-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #2563eb;
+  color: white !important;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.edit-btn:hover {
+  background: #1d4ed8;
+}
+
+.job-card button {
+  display: inline-block;
+  margin-top: 12px;
+  margin-left: 10px;
+  padding: 8px 16px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.job-card button:hover {
+  background: #b91c1c;
+}
+
+.job-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.job-controls input,
+.job-controls select {
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font: inherit;
+  background: white;
+}
+
+.job-controls input {
+  flex: 1;
+  min-width: 0;
+}
+
+.job-controls select {
+  min-width: 150px;
+}
+
+.job-controls input:focus,
+.job-controls select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .job-list-page {
+    padding: 25px 20px;
+  }
+
+  .jobs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .job-controls {
+    flex-wrap: wrap;
+  }
+
+  .job-controls input {
+    flex-basis: 100%;
+  }
+
+  .job-controls select {
+    flex: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .job-list-page {
+    padding: 20px 15px;
+  }
+
+  .jobs-container {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card {
+    padding: 18px;
+  }
+
+  .job-list-page h1 {
+    font-size: 24px;
+  }
+
+  .job-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .job-controls input,
+  .job-controls select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

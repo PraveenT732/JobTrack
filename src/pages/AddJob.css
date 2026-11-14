@@ -1,0 +1,95 @@
+
+.add-job-page {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.add-job-page h1 {
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.add-job-page > p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.add-job-page .form-group {
+  margin-bottom: 18px;
+}
+
+.add-job-page label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.add-job-page input,
+.add-job-page select,
+.add-job-page textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.add-job-page input:focus,
+.add-job-page select:focus,
+.add-job-page textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.add-job-page textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.add-job-page button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-job-page button:hover {
+  background: #1d4ed8;
+}
+
+.add-job-page .error {
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.add-job-page .success {
+  color: #16a34a;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .add-job-page {
+    margin: 30px 20px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-job-page {
+    margin: 20px 12px;
+    padding: 20px 15px;
+  }
+
+  .add-job-page h1 {
+    font-size: 23px;
+  }
+}
